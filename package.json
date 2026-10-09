@@ -1,0 +1,45 @@
+{
+  "name": "focus-time",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "format": "prettier --write src tests e2e *.ts *.json *.md docs/*.md",
+    "demo:export": "node scripts/generate-demo.mjs",
+    "desktop": "npm run build && electron .",
+    "package:win": "npm run build && electron-builder --win --x64",
+    "package:win:dir": "npm run build && electron-builder --win --x64 --dir",
+    "test:desktop": "playwright test -c playwright.desktop.config.ts"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^2.15.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.51.1",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^40.8.3",
+    "electron-builder": "^26.0.12",
+    "esbuild": "^0.25.12",
+    "fake-indexeddb": "^6.0.0",
+    "prettier": "^3.6.2",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.5",
+    "vitest": "^3.0.0"
+  },
+  "main": "electron/main.cjs",
+  "description": "专注时光：本地番茄钟、任务管理、数据统计与生活打卡",
+  "author": "Focus Time contributors",
+  "license": "MIT"
+}

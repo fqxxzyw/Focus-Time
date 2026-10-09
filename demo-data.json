@@ -1,0 +1,2486 @@
+{
+  "version": 1,
+  "profile": {
+    "nickname": "时光旅人",
+    "bio": "把时间留给重要的事。",
+    "avatar": "",
+    "goal": 120
+  },
+  "settings": {
+    "theme": "light",
+    "background": "forest",
+    "animation": "roll",
+    "focus": 25,
+    "short": 5,
+    "long": 15,
+    "cycles": 4,
+    "auto": false,
+    "sound": true,
+    "volume": 0.4,
+    "weekStart": 1
+  },
+  "lists": [
+    {
+      "id": "study",
+      "name": "学习"
+    },
+    {
+      "id": "work",
+      "name": "工作"
+    },
+    {
+      "id": "life",
+      "name": "个人生活"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+      "name": "阅读与笔记",
+      "description": "演示数据，可自由编辑",
+      "category": "阅读",
+      "listId": "study",
+      "date": "2026-10-09",
+      "estimate": 2,
+      "done": true,
+      "completedAt": 1791545001214,
+      "order": 0
+    },
+    {
+      "id": "47c2f805-a0fe-4504-85d6-8626abf70cd6",
+      "name": "深度学习练习",
+      "description": "演示数据，可自由编辑",
+      "category": "编程",
+      "listId": "study",
+      "date": "2026-10-09",
+      "estimate": 2,
+      "done": false,
+      "order": 1
+    },
+    {
+      "id": "9f847f35-5009-445e-9e40-8b86224619bc",
+      "name": "项目设计",
+      "description": "演示数据，可自由编辑",
+      "category": "工作",
+      "listId": "work",
+      "date": "2026-10-09",
+      "estimate": 2,
+      "done": false,
+      "order": 2
+    },
+    {
+      "id": "0a5a1b50-625b-4e0a-99b8-187261a1b398",
+      "name": "散步与放松",
+      "description": "演示数据，可自由编辑",
+      "category": "生活",
+      "listId": "life",
+      "date": "2026-10-09",
+      "estimate": 2,
+      "done": false,
+      "order": 3
+    }
+  ],
+  "templates": [],
+  "sessions": [
+    {
+      "id": "360899d1-79c3-4a74-9117-02b31c321403",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1920,
+      "startedAt": 1789082160000,
+      "endedAt": 1789084200000,
+      "intervals": [
+        {
+          "start": 1789082160000,
+          "end": 1789082460000
+        },
+        {
+          "start": 1789082580000,
+          "end": 1789084200000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "c27ae2eb-d68a-4cfc-9060-89d1a0edb9c9",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1860,
+      "startedAt": 1789168140000,
+      "endedAt": 1789170000000,
+      "intervals": [
+        {
+          "start": 1789168140000,
+          "end": 1789170000000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "0a5a1b50-625b-4e0a-99b8-187261a1b398",
+        "name": "散步与放松",
+        "category": "生活",
+        "listId": "life",
+        "listName": "个人生活"
+      }
+    },
+    {
+      "id": "cdd7ec19-219e-4ffd-86e0-0dcde62b1083",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1860,
+      "startedAt": 1789178940000,
+      "endedAt": 1789180800000,
+      "intervals": [
+        {
+          "start": 1789178940000,
+          "end": 1789180800000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "164fa79a-6528-4449-8b9d-c7fccc6e07bf",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1860,
+      "startedAt": 1789189740000,
+      "endedAt": 1789191600000,
+      "intervals": [
+        {
+          "start": 1789189740000,
+          "end": 1789191600000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "47c2f805-a0fe-4504-85d6-8626abf70cd6",
+        "name": "深度学习练习",
+        "category": "编程",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "64719025-14c1-468a-bc1d-7bb1fea4d572",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1860,
+      "startedAt": 1789200540000,
+      "endedAt": 1789202400000,
+      "intervals": [
+        {
+          "start": 1789200540000,
+          "end": 1789202400000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "8c62ccca-c684-4a6d-8895-c7f6fcbf21ed",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1800,
+      "startedAt": 1789254120000,
+      "endedAt": 1789256040000,
+      "intervals": [
+        {
+          "start": 1789254120000,
+          "end": 1789254420000
+        },
+        {
+          "start": 1789254540000,
+          "end": 1789256040000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "4f2b09af-d0ca-455e-9977-ebba4d4bc771",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1800,
+      "startedAt": 1789264920000,
+      "endedAt": 1789266840000,
+      "intervals": [
+        {
+          "start": 1789264920000,
+          "end": 1789265220000
+        },
+        {
+          "start": 1789265340000,
+          "end": 1789266840000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "0a5a1b50-625b-4e0a-99b8-187261a1b398",
+        "name": "散步与放松",
+        "category": "生活",
+        "listId": "life",
+        "listName": "个人生活"
+      }
+    },
+    {
+      "id": "e01780aa-b693-46b3-9fb3-5464671cab0e",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1800,
+      "startedAt": 1789275720000,
+      "endedAt": 1789277640000,
+      "intervals": [
+        {
+          "start": 1789275720000,
+          "end": 1789276020000
+        },
+        {
+          "start": 1789276140000,
+          "end": 1789277640000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "78e8a2cd-abed-4af5-94d0-9a9e08d261fc",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1740,
+      "startedAt": 1789343700000,
+      "endedAt": 1789345440000,
+      "intervals": [
+        {
+          "start": 1789343700000,
+          "end": 1789345440000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "47c2f805-a0fe-4504-85d6-8626abf70cd6",
+        "name": "深度学习练习",
+        "category": "编程",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "659a04e0-c655-4316-a3b5-7128c0e0a099",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1740,
+      "startedAt": 1789354500000,
+      "endedAt": 1789356240000,
+      "intervals": [
+        {
+          "start": 1789354500000,
+          "end": 1789356240000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "324f18fc-f75c-43fa-be32-19ac96950e15",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1680,
+      "startedAt": 1789429680000,
+      "endedAt": 1789431480000,
+      "intervals": [
+        {
+          "start": 1789429680000,
+          "end": 1789429980000
+        },
+        {
+          "start": 1789430100000,
+          "end": 1789431480000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "39616635-991b-4ef8-bff8-ca9ed16609cf",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1620,
+      "startedAt": 1789515660000,
+      "endedAt": 1789517280000,
+      "intervals": [
+        {
+          "start": 1789515660000,
+          "end": 1789517280000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "0a5a1b50-625b-4e0a-99b8-187261a1b398",
+        "name": "散步与放松",
+        "category": "生活",
+        "listId": "life",
+        "listName": "个人生活"
+      }
+    },
+    {
+      "id": "d3160cfb-8718-467d-ad81-21243810cee8",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1620,
+      "startedAt": 1789526460000,
+      "endedAt": 1789528080000,
+      "intervals": [
+        {
+          "start": 1789526460000,
+          "end": 1789528080000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "9da3d6d7-0524-4519-8630-a93d772cd79c",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1620,
+      "startedAt": 1789537260000,
+      "endedAt": 1789538880000,
+      "intervals": [
+        {
+          "start": 1789537260000,
+          "end": 1789538880000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "47c2f805-a0fe-4504-85d6-8626abf70cd6",
+        "name": "深度学习练习",
+        "category": "编程",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "e03eff63-1be5-4f6a-9b3a-3737725b44e0",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1620,
+      "startedAt": 1789548060000,
+      "endedAt": 1789549680000,
+      "intervals": [
+        {
+          "start": 1789548060000,
+          "end": 1789549680000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "8b0c3257-6885-4508-8f21-355b119f46fd",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1560,
+      "startedAt": 1789601640000,
+      "endedAt": 1789603320000,
+      "intervals": [
+        {
+          "start": 1789601640000,
+          "end": 1789601940000
+        },
+        {
+          "start": 1789602060000,
+          "end": 1789603320000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "e393ceb4-913b-422e-bc85-d6d012ae2bb8",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1560,
+      "startedAt": 1789612440000,
+      "endedAt": 1789614120000,
+      "intervals": [
+        {
+          "start": 1789612440000,
+          "end": 1789612740000
+        },
+        {
+          "start": 1789612860000,
+          "end": 1789614120000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "0a5a1b50-625b-4e0a-99b8-187261a1b398",
+        "name": "散步与放松",
+        "category": "生活",
+        "listId": "life",
+        "listName": "个人生活"
+      }
+    },
+    {
+      "id": "19acd74e-cc81-4f60-bbeb-6ff5c4198603",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1560,
+      "startedAt": 1789623240000,
+      "endedAt": 1789624920000,
+      "intervals": [
+        {
+          "start": 1789623240000,
+          "end": 1789623540000
+        },
+        {
+          "start": 1789623660000,
+          "end": 1789624920000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "fb777690-2dd6-4f50-a1e3-df9bc7c87535",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1500,
+      "startedAt": 1789687620000,
+      "endedAt": 1789689120000,
+      "intervals": [
+        {
+          "start": 1789687620000,
+          "end": 1789689120000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "47c2f805-a0fe-4504-85d6-8626abf70cd6",
+        "name": "深度学习练习",
+        "category": "编程",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "20bb0eda-779f-4ab5-8592-3ee9a98003b4",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1500,
+      "startedAt": 1789698420000,
+      "endedAt": 1789699920000,
+      "intervals": [
+        {
+          "start": 1789698420000,
+          "end": 1789699920000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "2442b88d-001b-4f56-8d25-357a381da15b",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1440,
+      "startedAt": 1789773600000,
+      "endedAt": 1789775160000,
+      "intervals": [
+        {
+          "start": 1789773600000,
+          "end": 1789773900000
+        },
+        {
+          "start": 1789774020000,
+          "end": 1789775160000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "58b6a54e-0f9e-424f-beb1-763b53f6a0fb",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1380,
+      "startedAt": 1789859580000,
+      "endedAt": 1789860960000,
+      "intervals": [
+        {
+          "start": 1789859580000,
+          "end": 1789860960000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "0a5a1b50-625b-4e0a-99b8-187261a1b398",
+        "name": "散步与放松",
+        "category": "生活",
+        "listId": "life",
+        "listName": "个人生活"
+      }
+    },
+    {
+      "id": "ae9e915f-1b69-4e82-a255-87b00b5a4446",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1380,
+      "startedAt": 1789870380000,
+      "endedAt": 1789871760000,
+      "intervals": [
+        {
+          "start": 1789870380000,
+          "end": 1789871760000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "ff620dab-6daa-4a28-8b32-e00f79176f38",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1380,
+      "startedAt": 1789881180000,
+      "endedAt": 1789882560000,
+      "intervals": [
+        {
+          "start": 1789881180000,
+          "end": 1789882560000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "47c2f805-a0fe-4504-85d6-8626abf70cd6",
+        "name": "深度学习练习",
+        "category": "编程",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "33aeb360-6adc-4bda-b69f-db5c00900cfa",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1380,
+      "startedAt": 1789891980000,
+      "endedAt": 1789893360000,
+      "intervals": [
+        {
+          "start": 1789891980000,
+          "end": 1789893360000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "e91ad232-8304-4093-a803-41956262ef18",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1320,
+      "startedAt": 1789945560000,
+      "endedAt": 1789947000000,
+      "intervals": [
+        {
+          "start": 1789945560000,
+          "end": 1789945860000
+        },
+        {
+          "start": 1789945980000,
+          "end": 1789947000000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "54e161be-dab9-49f6-8d8f-e6885b9c8116",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1320,
+      "startedAt": 1789956360000,
+      "endedAt": 1789957800000,
+      "intervals": [
+        {
+          "start": 1789956360000,
+          "end": 1789956660000
+        },
+        {
+          "start": 1789956780000,
+          "end": 1789957800000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "0a5a1b50-625b-4e0a-99b8-187261a1b398",
+        "name": "散步与放松",
+        "category": "生活",
+        "listId": "life",
+        "listName": "个人生活"
+      }
+    },
+    {
+      "id": "7bfaa2cb-aa2d-4906-a55d-c903b2a67eba",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1320,
+      "startedAt": 1789967160000,
+      "endedAt": 1789968600000,
+      "intervals": [
+        {
+          "start": 1789967160000,
+          "end": 1789967460000
+        },
+        {
+          "start": 1789967580000,
+          "end": 1789968600000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "ca8f6923-92a3-4018-b6c4-3518554b4f49",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1260,
+      "startedAt": 1790035140000,
+      "endedAt": 1790036400000,
+      "intervals": [
+        {
+          "start": 1790035140000,
+          "end": 1790036400000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "47c2f805-a0fe-4504-85d6-8626abf70cd6",
+        "name": "深度学习练习",
+        "category": "编程",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "1402b35f-b187-4661-b540-f66008723efb",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1260,
+      "startedAt": 1790045940000,
+      "endedAt": 1790047200000,
+      "intervals": [
+        {
+          "start": 1790045940000,
+          "end": 1790047200000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "c9767044-ed38-4f1b-981e-875288c24c2e",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1200,
+      "startedAt": 1790121120000,
+      "endedAt": 1790122440000,
+      "intervals": [
+        {
+          "start": 1790121120000,
+          "end": 1790121420000
+        },
+        {
+          "start": 1790121540000,
+          "end": 1790122440000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "5f44bc9c-d116-443a-8446-51846e9d991e",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 2100,
+      "startedAt": 1790207100000,
+      "endedAt": 1790209200000,
+      "intervals": [
+        {
+          "start": 1790207100000,
+          "end": 1790209200000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "0a5a1b50-625b-4e0a-99b8-187261a1b398",
+        "name": "散步与放松",
+        "category": "生活",
+        "listId": "life",
+        "listName": "个人生活"
+      }
+    },
+    {
+      "id": "2814494e-d3ad-49d1-9a4f-6bfbbffbb084",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 2100,
+      "startedAt": 1790217900000,
+      "endedAt": 1790220000000,
+      "intervals": [
+        {
+          "start": 1790217900000,
+          "end": 1790220000000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "120d289d-c8f2-40b0-9cac-a341c8d1d784",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 2100,
+      "startedAt": 1790228700000,
+      "endedAt": 1790230800000,
+      "intervals": [
+        {
+          "start": 1790228700000,
+          "end": 1790230800000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "47c2f805-a0fe-4504-85d6-8626abf70cd6",
+        "name": "深度学习练习",
+        "category": "编程",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "4be96fd9-fd3b-4af6-9246-1ae80d4be291",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 2100,
+      "startedAt": 1790239500000,
+      "endedAt": 1790241600000,
+      "intervals": [
+        {
+          "start": 1790239500000,
+          "end": 1790241600000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "62200daa-7abc-4fee-b6c9-6a3fe37bbfc0",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 2040,
+      "startedAt": 1790293080000,
+      "endedAt": 1790295240000,
+      "intervals": [
+        {
+          "start": 1790293080000,
+          "end": 1790293380000
+        },
+        {
+          "start": 1790293500000,
+          "end": 1790295240000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "0fa2950e-fb0f-4197-9882-08b090520ae9",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 2040,
+      "startedAt": 1790303880000,
+      "endedAt": 1790306040000,
+      "intervals": [
+        {
+          "start": 1790303880000,
+          "end": 1790304180000
+        },
+        {
+          "start": 1790304300000,
+          "end": 1790306040000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "0a5a1b50-625b-4e0a-99b8-187261a1b398",
+        "name": "散步与放松",
+        "category": "生活",
+        "listId": "life",
+        "listName": "个人生活"
+      }
+    },
+    {
+      "id": "672dde98-d729-4328-be41-be4aeaf49e81",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 2040,
+      "startedAt": 1790314680000,
+      "endedAt": 1790316840000,
+      "intervals": [
+        {
+          "start": 1790314680000,
+          "end": 1790314980000
+        },
+        {
+          "start": 1790315100000,
+          "end": 1790316840000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "819f3d95-a619-4edb-bb26-6b92ca303895",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1980,
+      "startedAt": 1790379060000,
+      "endedAt": 1790381040000,
+      "intervals": [
+        {
+          "start": 1790379060000,
+          "end": 1790381040000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "47c2f805-a0fe-4504-85d6-8626abf70cd6",
+        "name": "深度学习练习",
+        "category": "编程",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "60f9c393-ecaa-40b5-8bed-6118734dc3e2",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1980,
+      "startedAt": 1790389860000,
+      "endedAt": 1790391840000,
+      "intervals": [
+        {
+          "start": 1790389860000,
+          "end": 1790391840000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "ac9a0dbe-14c2-44e9-88c1-a6579835d5ad",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1920,
+      "startedAt": 1790465040000,
+      "endedAt": 1790467080000,
+      "intervals": [
+        {
+          "start": 1790465040000,
+          "end": 1790465340000
+        },
+        {
+          "start": 1790465460000,
+          "end": 1790467080000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "65c65dd9-7152-4184-8290-ff7bf78693e9",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1860,
+      "startedAt": 1790551020000,
+      "endedAt": 1790552880000,
+      "intervals": [
+        {
+          "start": 1790551020000,
+          "end": 1790552880000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "0a5a1b50-625b-4e0a-99b8-187261a1b398",
+        "name": "散步与放松",
+        "category": "生活",
+        "listId": "life",
+        "listName": "个人生活"
+      }
+    },
+    {
+      "id": "7aec9cba-dbaf-44d8-8e9a-3327b87069da",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1860,
+      "startedAt": 1790561820000,
+      "endedAt": 1790563680000,
+      "intervals": [
+        {
+          "start": 1790561820000,
+          "end": 1790563680000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "c031cf28-a89f-4b91-8c48-bee3ebc2306e",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1860,
+      "startedAt": 1790572620000,
+      "endedAt": 1790574480000,
+      "intervals": [
+        {
+          "start": 1790572620000,
+          "end": 1790574480000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "47c2f805-a0fe-4504-85d6-8626abf70cd6",
+        "name": "深度学习练习",
+        "category": "编程",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "675c4146-b096-4727-87e2-34c1a5ad380c",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1860,
+      "startedAt": 1790583420000,
+      "endedAt": 1790585280000,
+      "intervals": [
+        {
+          "start": 1790583420000,
+          "end": 1790585280000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "4d856dd9-bfea-4cc3-9612-fadd804ed1c2",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1800,
+      "startedAt": 1790637000000,
+      "endedAt": 1790638920000,
+      "intervals": [
+        {
+          "start": 1790637000000,
+          "end": 1790637300000
+        },
+        {
+          "start": 1790637420000,
+          "end": 1790638920000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "fed75303-3414-4d3f-b754-572d6059fdb8",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1800,
+      "startedAt": 1790647800000,
+      "endedAt": 1790649720000,
+      "intervals": [
+        {
+          "start": 1790647800000,
+          "end": 1790648100000
+        },
+        {
+          "start": 1790648220000,
+          "end": 1790649720000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "0a5a1b50-625b-4e0a-99b8-187261a1b398",
+        "name": "散步与放松",
+        "category": "生活",
+        "listId": "life",
+        "listName": "个人生活"
+      }
+    },
+    {
+      "id": "ae3d2dbf-5282-4435-a5d0-d92b6450ddbe",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1800,
+      "startedAt": 1790658600000,
+      "endedAt": 1790660520000,
+      "intervals": [
+        {
+          "start": 1790658600000,
+          "end": 1790658900000
+        },
+        {
+          "start": 1790659020000,
+          "end": 1790660520000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "ea1d411f-1c40-4583-a0b2-42e227525ada",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1740,
+      "startedAt": 1790722980000,
+      "endedAt": 1790724720000,
+      "intervals": [
+        {
+          "start": 1790722980000,
+          "end": 1790724720000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "47c2f805-a0fe-4504-85d6-8626abf70cd6",
+        "name": "深度学习练习",
+        "category": "编程",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "183f684f-33cc-4c86-9d24-32c9e4917c1e",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1740,
+      "startedAt": 1790733780000,
+      "endedAt": 1790735520000,
+      "intervals": [
+        {
+          "start": 1790733780000,
+          "end": 1790735520000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "fe5baa22-b6d0-419b-96e8-c018a90a3a1a",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1680,
+      "startedAt": 1790812560000,
+      "endedAt": 1790814360000,
+      "intervals": [
+        {
+          "start": 1790812560000,
+          "end": 1790812860000
+        },
+        {
+          "start": 1790812980000,
+          "end": 1790814360000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "90d60de4-0fe9-44d8-8e3e-0360c9cc047a",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1620,
+      "startedAt": 1790898540000,
+      "endedAt": 1790900160000,
+      "intervals": [
+        {
+          "start": 1790898540000,
+          "end": 1790900160000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "0a5a1b50-625b-4e0a-99b8-187261a1b398",
+        "name": "散步与放松",
+        "category": "生活",
+        "listId": "life",
+        "listName": "个人生活"
+      }
+    },
+    {
+      "id": "a92ad27d-447d-48d7-aea3-1bb82cb445d3",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1620,
+      "startedAt": 1790909340000,
+      "endedAt": 1790910960000,
+      "intervals": [
+        {
+          "start": 1790909340000,
+          "end": 1790910960000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "bfec8e26-a885-4705-93e8-fa67f50b1527",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1620,
+      "startedAt": 1790920140000,
+      "endedAt": 1790921760000,
+      "intervals": [
+        {
+          "start": 1790920140000,
+          "end": 1790921760000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "47c2f805-a0fe-4504-85d6-8626abf70cd6",
+        "name": "深度学习练习",
+        "category": "编程",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "e393246c-a224-4d45-a21c-1979764948ba",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1620,
+      "startedAt": 1790930940000,
+      "endedAt": 1790932560000,
+      "intervals": [
+        {
+          "start": 1790930940000,
+          "end": 1790932560000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "562fcf3b-b1b3-4a67-bb0c-39fc1d3a5949",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1560,
+      "startedAt": 1790984520000,
+      "endedAt": 1790986200000,
+      "intervals": [
+        {
+          "start": 1790984520000,
+          "end": 1790984820000
+        },
+        {
+          "start": 1790984940000,
+          "end": 1790986200000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "d0644ddd-78a3-4c80-bf53-cea862f8bf0b",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1560,
+      "startedAt": 1790995320000,
+      "endedAt": 1790997000000,
+      "intervals": [
+        {
+          "start": 1790995320000,
+          "end": 1790995620000
+        },
+        {
+          "start": 1790995740000,
+          "end": 1790997000000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "0a5a1b50-625b-4e0a-99b8-187261a1b398",
+        "name": "散步与放松",
+        "category": "生活",
+        "listId": "life",
+        "listName": "个人生活"
+      }
+    },
+    {
+      "id": "11116678-5f72-4ace-a56b-c5951af69463",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1560,
+      "startedAt": 1791006120000,
+      "endedAt": 1791007800000,
+      "intervals": [
+        {
+          "start": 1791006120000,
+          "end": 1791006420000
+        },
+        {
+          "start": 1791006540000,
+          "end": 1791007800000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "d95b0422-7e84-4158-9834-8692de15d0d6",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1500,
+      "startedAt": 1791070500000,
+      "endedAt": 1791072000000,
+      "intervals": [
+        {
+          "start": 1791070500000,
+          "end": 1791072000000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "47c2f805-a0fe-4504-85d6-8626abf70cd6",
+        "name": "深度学习练习",
+        "category": "编程",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "33bcb46d-4733-4dcc-97f0-38c623067b07",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1500,
+      "startedAt": 1791081300000,
+      "endedAt": 1791082800000,
+      "intervals": [
+        {
+          "start": 1791081300000,
+          "end": 1791082800000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "6cae81e2-4c46-4086-a9e8-086b9b479115",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1440,
+      "startedAt": 1791156480000,
+      "endedAt": 1791158040000,
+      "intervals": [
+        {
+          "start": 1791156480000,
+          "end": 1791156780000
+        },
+        {
+          "start": 1791156900000,
+          "end": 1791158040000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "ae0d350f-8dac-4cd6-ab87-383b5d4dfc5f",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1380,
+      "startedAt": 1791242460000,
+      "endedAt": 1791243840000,
+      "intervals": [
+        {
+          "start": 1791242460000,
+          "end": 1791243840000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "0a5a1b50-625b-4e0a-99b8-187261a1b398",
+        "name": "散步与放松",
+        "category": "生活",
+        "listId": "life",
+        "listName": "个人生活"
+      }
+    },
+    {
+      "id": "67e8922f-9998-429b-8140-e4ad75337468",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1380,
+      "startedAt": 1791253260000,
+      "endedAt": 1791254640000,
+      "intervals": [
+        {
+          "start": 1791253260000,
+          "end": 1791254640000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "107fab7c-6259-4aa2-a096-fb0b52cb9279",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1380,
+      "startedAt": 1791264060000,
+      "endedAt": 1791265440000,
+      "intervals": [
+        {
+          "start": 1791264060000,
+          "end": 1791265440000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "47c2f805-a0fe-4504-85d6-8626abf70cd6",
+        "name": "深度学习练习",
+        "category": "编程",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "99cd8016-f020-4a1b-a9f7-4bb9bae9b017",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1380,
+      "startedAt": 1791274860000,
+      "endedAt": 1791276240000,
+      "intervals": [
+        {
+          "start": 1791274860000,
+          "end": 1791276240000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "5f6cc2f6-34b0-47c1-9d22-de51cc325ed6",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1320,
+      "startedAt": 1791328440000,
+      "endedAt": 1791329880000,
+      "intervals": [
+        {
+          "start": 1791328440000,
+          "end": 1791328740000
+        },
+        {
+          "start": 1791328860000,
+          "end": 1791329880000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "7b317bd3-b370-4f97-9936-1cf3e168eb3c",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1320,
+      "startedAt": 1791339240000,
+      "endedAt": 1791340680000,
+      "intervals": [
+        {
+          "start": 1791339240000,
+          "end": 1791339540000
+        },
+        {
+          "start": 1791339660000,
+          "end": 1791340680000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "0a5a1b50-625b-4e0a-99b8-187261a1b398",
+        "name": "散步与放松",
+        "category": "生活",
+        "listId": "life",
+        "listName": "个人生活"
+      }
+    },
+    {
+      "id": "17950081-253a-4ee1-8c25-350e05777bba",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1320,
+      "startedAt": 1791350040000,
+      "endedAt": 1791351480000,
+      "intervals": [
+        {
+          "start": 1791350040000,
+          "end": 1791350340000
+        },
+        {
+          "start": 1791350460000,
+          "end": 1791351480000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "6fb95530-8d50-4fde-8e44-70601b3a9290",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1260,
+      "startedAt": 1791414420000,
+      "endedAt": 1791415680000,
+      "intervals": [
+        {
+          "start": 1791414420000,
+          "end": 1791415680000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "47c2f805-a0fe-4504-85d6-8626abf70cd6",
+        "name": "深度学习练习",
+        "category": "编程",
+        "listId": "study",
+        "listName": "学习"
+      }
+    },
+    {
+      "id": "d1251da4-39f8-433b-b9d7-339902f4f84a",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1260,
+      "startedAt": 1791425220000,
+      "endedAt": 1791426480000,
+      "intervals": [
+        {
+          "start": 1791425220000,
+          "end": 1791426480000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "9f847f35-5009-445e-9e40-8b86224619bc",
+        "name": "项目设计",
+        "category": "工作",
+        "listId": "work",
+        "listName": "工作"
+      }
+    },
+    {
+      "id": "47e6299a-cdfe-4e34-bcb9-36d6ac917e4d",
+      "mode": "pomodoro",
+      "phase": "focus",
+      "status": "finished",
+      "target": 1200,
+      "startedAt": 1791500400000,
+      "endedAt": 1791501720000,
+      "intervals": [
+        {
+          "start": 1791500400000,
+          "end": 1791500700000
+        },
+        {
+          "start": 1791500820000,
+          "end": 1791501720000
+        }
+      ],
+      "natural": true,
+      "background": "forest",
+      "snapshot": {
+        "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+        "name": "阅读与笔记",
+        "category": "阅读",
+        "listId": "study",
+        "listName": "学习"
+      }
+    }
+  ],
+  "interruptions": [
+    {
+      "id": "5366aea4-18e3-4218-825a-1532e163f4ce",
+      "sessionId": "360899d1-79c3-4a74-9117-02b31c321403",
+      "at": 1789082460000,
+      "action": "pause",
+      "reason": "未填写",
+      "note": ""
+    },
+    {
+      "id": "2559ea59-31a3-4d86-8f98-e5f01bd1aafa",
+      "sessionId": "8c62ccca-c684-4a6d-8895-c7f6fcbf21ed",
+      "at": 1789254420000,
+      "action": "pause",
+      "reason": "疲劳",
+      "note": ""
+    },
+    {
+      "id": "25ff813a-a6d0-44e2-b66f-494af3c7d5e6",
+      "sessionId": "4f2b09af-d0ca-455e-9977-ebba4d4bc771",
+      "at": 1789265220000,
+      "action": "pause",
+      "reason": "未填写",
+      "note": ""
+    },
+    {
+      "id": "42262f18-c670-456f-ba7c-708f770a5109",
+      "sessionId": "e01780aa-b693-46b3-9fb3-5464671cab0e",
+      "at": 1789276020000,
+      "action": "pause",
+      "reason": "临时工作",
+      "note": ""
+    },
+    {
+      "id": "dc689f35-f29c-4982-871e-0035eeb322c9",
+      "sessionId": "324f18fc-f75c-43fa-be32-19ac96950e15",
+      "at": 1789429980000,
+      "action": "pause",
+      "reason": "手机消息",
+      "note": ""
+    },
+    {
+      "id": "9b741691-7ac0-4fa0-8df3-ab7457d07b56",
+      "sessionId": "8b0c3257-6885-4508-8f21-355b119f46fd",
+      "at": 1789601940000,
+      "action": "pause",
+      "reason": "临时工作",
+      "note": ""
+    },
+    {
+      "id": "a066aaaf-efdb-4f0a-aa37-b064623e77f1",
+      "sessionId": "e393ceb4-913b-422e-bc85-d6d012ae2bb8",
+      "at": 1789612740000,
+      "action": "pause",
+      "reason": "手机消息",
+      "note": ""
+    },
+    {
+      "id": "15f21678-7d23-4db2-8492-9c43c489d174",
+      "sessionId": "19acd74e-cc81-4f60-bbeb-6ff5c4198603",
+      "at": 1789623540000,
+      "action": "pause",
+      "reason": "疲劳",
+      "note": ""
+    },
+    {
+      "id": "adbb7fab-cda5-4e00-91b2-d1eebc7aa1ba",
+      "sessionId": "2442b88d-001b-4f56-8d25-357a381da15b",
+      "at": 1789773900000,
+      "action": "pause",
+      "reason": "未填写",
+      "note": ""
+    },
+    {
+      "id": "73c29cb4-cf0c-47f1-bf2c-e130060de8d9",
+      "sessionId": "e91ad232-8304-4093-a803-41956262ef18",
+      "at": 1789945860000,
+      "action": "pause",
+      "reason": "疲劳",
+      "note": ""
+    },
+    {
+      "id": "173213b8-c524-4af0-9ca5-3f63c9d8e6b9",
+      "sessionId": "54e161be-dab9-49f6-8d8f-e6885b9c8116",
+      "at": 1789956660000,
+      "action": "pause",
+      "reason": "未填写",
+      "note": ""
+    },
+    {
+      "id": "01c5be90-785c-45d7-b69f-98df673d1d60",
+      "sessionId": "7bfaa2cb-aa2d-4906-a55d-c903b2a67eba",
+      "at": 1789967460000,
+      "action": "pause",
+      "reason": "临时工作",
+      "note": ""
+    },
+    {
+      "id": "22650fa1-e1db-4f3b-9207-3efc2d2adde8",
+      "sessionId": "c9767044-ed38-4f1b-981e-875288c24c2e",
+      "at": 1790121420000,
+      "action": "pause",
+      "reason": "手机消息",
+      "note": ""
+    },
+    {
+      "id": "4bb165a7-d313-4e45-935d-ec5defbeedb3",
+      "sessionId": "62200daa-7abc-4fee-b6c9-6a3fe37bbfc0",
+      "at": 1790293380000,
+      "action": "pause",
+      "reason": "临时工作",
+      "note": ""
+    },
+    {
+      "id": "89884a4c-e53c-4c65-819c-42be644a7952",
+      "sessionId": "0fa2950e-fb0f-4197-9882-08b090520ae9",
+      "at": 1790304180000,
+      "action": "pause",
+      "reason": "手机消息",
+      "note": ""
+    },
+    {
+      "id": "24cdb709-87c1-41a1-90ee-e37a4525d3a9",
+      "sessionId": "672dde98-d729-4328-be41-be4aeaf49e81",
+      "at": 1790314980000,
+      "action": "pause",
+      "reason": "疲劳",
+      "note": ""
+    },
+    {
+      "id": "de187749-0f7a-4f27-b16d-e5b82d7ddde4",
+      "sessionId": "ac9a0dbe-14c2-44e9-88c1-a6579835d5ad",
+      "at": 1790465340000,
+      "action": "pause",
+      "reason": "未填写",
+      "note": ""
+    },
+    {
+      "id": "a6526aec-2e82-491a-94c7-38ef840a0f35",
+      "sessionId": "4d856dd9-bfea-4cc3-9612-fadd804ed1c2",
+      "at": 1790637300000,
+      "action": "pause",
+      "reason": "疲劳",
+      "note": ""
+    },
+    {
+      "id": "cf673cc2-88cd-445f-8081-25c7c1cfb4b3",
+      "sessionId": "fed75303-3414-4d3f-b754-572d6059fdb8",
+      "at": 1790648100000,
+      "action": "pause",
+      "reason": "未填写",
+      "note": ""
+    },
+    {
+      "id": "b5b4a2bd-8d74-45f4-9690-eae4aa22f88a",
+      "sessionId": "ae3d2dbf-5282-4435-a5d0-d92b6450ddbe",
+      "at": 1790658900000,
+      "action": "pause",
+      "reason": "临时工作",
+      "note": ""
+    },
+    {
+      "id": "093aaf2c-97c5-4974-81ca-743a21168682",
+      "sessionId": "fe5baa22-b6d0-419b-96e8-c018a90a3a1a",
+      "at": 1790812860000,
+      "action": "pause",
+      "reason": "手机消息",
+      "note": ""
+    },
+    {
+      "id": "5ebc47f0-c567-4599-aa67-f324aa046aa6",
+      "sessionId": "562fcf3b-b1b3-4a67-bb0c-39fc1d3a5949",
+      "at": 1790984820000,
+      "action": "pause",
+      "reason": "临时工作",
+      "note": ""
+    },
+    {
+      "id": "2745cab6-6d17-4533-ba6a-46d155b7d816",
+      "sessionId": "d0644ddd-78a3-4c80-bf53-cea862f8bf0b",
+      "at": 1790995620000,
+      "action": "pause",
+      "reason": "手机消息",
+      "note": ""
+    },
+    {
+      "id": "0777ab73-958d-4a55-aba6-902fb5b23b91",
+      "sessionId": "11116678-5f72-4ace-a56b-c5951af69463",
+      "at": 1791006420000,
+      "action": "pause",
+      "reason": "疲劳",
+      "note": ""
+    },
+    {
+      "id": "a3706877-0431-4238-941c-537dae9bfeee",
+      "sessionId": "6cae81e2-4c46-4086-a9e8-086b9b479115",
+      "at": 1791156780000,
+      "action": "pause",
+      "reason": "未填写",
+      "note": ""
+    },
+    {
+      "id": "cb6c45de-8416-48f1-b612-c67c890db2bb",
+      "sessionId": "5f6cc2f6-34b0-47c1-9d22-de51cc325ed6",
+      "at": 1791328740000,
+      "action": "pause",
+      "reason": "疲劳",
+      "note": ""
+    },
+    {
+      "id": "d284509f-9d67-43f7-a997-8e8108914bc9",
+      "sessionId": "7b317bd3-b370-4f97-9936-1cf3e168eb3c",
+      "at": 1791339540000,
+      "action": "pause",
+      "reason": "未填写",
+      "note": ""
+    },
+    {
+      "id": "467ca49b-e789-497d-9568-fe2bc29dc7b1",
+      "sessionId": "17950081-253a-4ee1-8c25-350e05777bba",
+      "at": 1791350340000,
+      "action": "pause",
+      "reason": "临时工作",
+      "note": ""
+    },
+    {
+      "id": "7159b34e-af32-4ab8-865a-9f2ca093a8f9",
+      "sessionId": "47e6299a-cdfe-4e34-bcb9-36d6ac917e4d",
+      "at": 1791500700000,
+      "action": "pause",
+      "reason": "手机消息",
+      "note": ""
+    }
+  ],
+  "future": [
+    {
+      "id": "274ebb46-679c-42e2-b623-e6fa64146fb6",
+      "name": "下一次重要考试",
+      "target": 1794137001214,
+      "description": "每天前进一步",
+      "pinned": true
+    },
+    {
+      "id": "cd370e2c-3cbe-4483-85ad-aa17821488a4",
+      "name": "期待的旅行",
+      "target": 1797161001214,
+      "description": "去看看新的风景",
+      "pinned": false
+    }
+  ],
+  "checks": [
+    {
+      "id": "32d30c93-028a-41bf-ba2d-60e49c4cbea8",
+      "kind": "bed",
+      "at": 1789135800000
+    },
+    {
+      "id": "7fb65c07-70c2-4b79-b45f-a4e7eadb0cac",
+      "kind": "wake",
+      "at": 1789164000000
+    },
+    {
+      "id": "00e46fe5-bfb4-4be0-af56-76bc4376f814",
+      "kind": "bed",
+      "at": 1789221600000
+    },
+    {
+      "id": "673ca3ee-adac-47fb-a85f-c89ac1048b1a",
+      "kind": "wake",
+      "at": 1789252200000
+    },
+    {
+      "id": "39e4d1b4-8ae7-449e-a7c3-184bda01aa30",
+      "kind": "bed",
+      "at": 1789309200000
+    },
+    {
+      "id": "331b043b-90b7-4800-8abd-eb3f4f06fb6c",
+      "kind": "wake",
+      "at": 1789338000000
+    },
+    {
+      "id": "a3fa0981-7af2-4139-834e-a6ad1225d9c3",
+      "kind": "bed",
+      "at": 1789395000000
+    },
+    {
+      "id": "c7d9d58a-ff02-4450-9f42-16ddfbb2f6e9",
+      "kind": "wake",
+      "at": 1789423800000
+    },
+    {
+      "id": "2210a32e-8cbb-4b38-8ca5-b0abda1016de",
+      "kind": "bed",
+      "at": 1789480800000
+    },
+    {
+      "id": "c46edc7e-b8f4-42e8-b4d2-966f7f53a616",
+      "kind": "wake",
+      "at": 1789509600000
+    },
+    {
+      "id": "fc4e23b0-2fc3-4ca2-b2fe-d8537a01d300",
+      "kind": "bed",
+      "at": 1789568400000
+    },
+    {
+      "id": "1b7657f4-682c-4eba-82ba-1c2540a3d245",
+      "kind": "wake",
+      "at": 1789597800000
+    },
+    {
+      "id": "9a6f31d8-2d73-4ea8-9e5f-7584a381fe16",
+      "kind": "bed",
+      "at": 1789654200000
+    },
+    {
+      "id": "24af5637-d67e-45b7-889a-dca599a012be",
+      "kind": "wake",
+      "at": 1789683600000
+    },
+    {
+      "id": "a16f4bfd-8d76-42fb-acec-23b6c3cf178b",
+      "kind": "bed",
+      "at": 1789740000000
+    },
+    {
+      "id": "59bbe4a2-051e-49d7-b252-68a642d89a04",
+      "kind": "wake",
+      "at": 1789769400000
+    },
+    {
+      "id": "c4360c00-51e0-4dec-8b55-bdf13d6574b4",
+      "kind": "bed",
+      "at": 1789827600000
+    },
+    {
+      "id": "c45d5f6c-a763-48e5-844b-3784d3ae1433",
+      "kind": "wake",
+      "at": 1789855200000
+    },
+    {
+      "id": "9bd2212f-65b3-4b25-b8b5-48824d68f34e",
+      "kind": "bed",
+      "at": 1789913400000
+    },
+    {
+      "id": "fc4ef9f0-1d23-4844-9a2d-8ea161279e16",
+      "kind": "wake",
+      "at": 1789943400000
+    },
+    {
+      "id": "aa3d9294-d68a-4154-8fe7-5a2f973f1e55",
+      "kind": "bed",
+      "at": 1789999200000
+    },
+    {
+      "id": "ffe44bdc-5526-4213-bdfd-a0d84d709519",
+      "kind": "wake",
+      "at": 1790029200000
+    },
+    {
+      "id": "6fde6d74-0874-45b4-b646-3b2fb125e52d",
+      "kind": "bed",
+      "at": 1790086800000
+    },
+    {
+      "id": "061ffe30-f8fb-4857-a84d-7f300d1a029d",
+      "kind": "wake",
+      "at": 1790115000000
+    },
+    {
+      "id": "1862928d-fcc3-4d2a-8a2d-5066bdb5a9a6",
+      "kind": "bed",
+      "at": 1790172600000
+    },
+    {
+      "id": "c47f2294-3669-4ea7-9a89-56ac9cd1ae64",
+      "kind": "wake",
+      "at": 1790200800000
+    },
+    {
+      "id": "b4ac9477-74e6-4293-ab8c-6ddb825ca6f6",
+      "kind": "bed",
+      "at": 1790258400000
+    },
+    {
+      "id": "7861616b-057d-4032-98f2-03f8ccb22071",
+      "kind": "wake",
+      "at": 1790289000000
+    },
+    {
+      "id": "27cc9837-97cf-4cc2-81f4-a2856c3ffa2b",
+      "kind": "bed",
+      "at": 1790346000000
+    },
+    {
+      "id": "e1db662c-ab28-45ba-93bd-e47d339dce66",
+      "kind": "wake",
+      "at": 1790374800000
+    },
+    {
+      "id": "35d7633a-c287-42a1-871d-b40e37b6819c",
+      "kind": "bed",
+      "at": 1790431800000
+    },
+    {
+      "id": "bc3415ec-d240-428a-bdca-966ba32e2da2",
+      "kind": "wake",
+      "at": 1790460600000
+    },
+    {
+      "id": "6ec0ec43-970b-4015-aa5c-255a5536ea72",
+      "kind": "bed",
+      "at": 1790517600000
+    },
+    {
+      "id": "ade6332e-4405-4a10-857b-59d1fa14fa03",
+      "kind": "wake",
+      "at": 1790546400000
+    },
+    {
+      "id": "2821241b-c31f-4118-af47-13ea6b28a738",
+      "kind": "bed",
+      "at": 1790605200000
+    },
+    {
+      "id": "2e3ae072-a254-4f28-b9ba-fa9ba1b6e16c",
+      "kind": "wake",
+      "at": 1790634600000
+    },
+    {
+      "id": "61f3780a-b629-4545-8051-b8ea9b4cbae3",
+      "kind": "bed",
+      "at": 1790691000000
+    },
+    {
+      "id": "877dc0e9-f174-4872-bc2e-7d217185fb72",
+      "kind": "wake",
+      "at": 1790720400000
+    },
+    {
+      "id": "7f85ecf3-72b5-428f-b16d-a72b8fcec019",
+      "kind": "bed",
+      "at": 1790776800000
+    },
+    {
+      "id": "ad121fff-57ec-4319-a9db-dac86798f067",
+      "kind": "wake",
+      "at": 1790806200000
+    },
+    {
+      "id": "6e24398e-46a7-45f1-a943-e622a2d886c0",
+      "kind": "bed",
+      "at": 1790864400000
+    },
+    {
+      "id": "6f213bc3-510e-44bb-89d6-b9ba0e2c8f3f",
+      "kind": "wake",
+      "at": 1790892000000
+    },
+    {
+      "id": "b13872dc-686c-44fa-bc85-68d674792438",
+      "kind": "bed",
+      "at": 1790950200000
+    },
+    {
+      "id": "61e38e3d-860c-4abc-8f64-90eeda7280ae",
+      "kind": "wake",
+      "at": 1790980200000
+    },
+    {
+      "id": "dddd74a2-1e1f-4670-bae6-2fbf4cc3f229",
+      "kind": "bed",
+      "at": 1791036000000
+    },
+    {
+      "id": "8754eacb-c7d5-4c7f-9792-48c2842beb76",
+      "kind": "wake",
+      "at": 1791066000000
+    },
+    {
+      "id": "527e77ae-24a3-4623-b830-9c40ab16aae1",
+      "kind": "bed",
+      "at": 1791123600000
+    },
+    {
+      "id": "e77c561e-f2a1-4deb-b92d-93b351773c36",
+      "kind": "wake",
+      "at": 1791151800000
+    },
+    {
+      "id": "05f55301-820b-481f-8bcc-bf82fcd90fff",
+      "kind": "bed",
+      "at": 1791209400000
+    },
+    {
+      "id": "ebfb494b-6f98-4c24-a930-3cfc31bec765",
+      "kind": "wake",
+      "at": 1791237600000
+    },
+    {
+      "id": "d7f9a066-a0b4-4447-b7bc-7985da0c3e1b",
+      "kind": "bed",
+      "at": 1791295200000
+    },
+    {
+      "id": "cdf5689f-94c8-4ed6-8c4b-bd63903a4501",
+      "kind": "wake",
+      "at": 1791325800000
+    },
+    {
+      "id": "16e233ab-8ee2-4ff5-92b5-9dabe0ed8fae",
+      "kind": "bed",
+      "at": 1791382800000
+    },
+    {
+      "id": "202be144-aa61-41cf-b2d4-09de1561d644",
+      "kind": "wake",
+      "at": 1791411600000
+    },
+    {
+      "id": "6d1beba1-22f3-4035-b8cc-d04ea9b53a29",
+      "kind": "bed",
+      "at": 1791468600000
+    },
+    {
+      "id": "1d83c55f-071d-44eb-8cb0-bf5611e1e3c1",
+      "kind": "wake",
+      "at": 1791497400000
+    },
+    {
+      "id": "b5980b06-eddf-4892-9e09-bddc14bec52c",
+      "kind": "bed",
+      "at": 1791554400000
+    },
+    {
+      "id": "75d3cd13-4fc5-47d7-ad33-e77053d4f624",
+      "kind": "wake",
+      "at": 1791583200000
+    }
+  ],
+  "badges": [
+    {
+      "id": "first",
+      "unlockedAt": 1791545001214
+    },
+    {
+      "id": "ten",
+      "unlockedAt": 1791545001214
+    },
+    {
+      "id": "hours",
+      "unlockedAt": 1791545001214
+    },
+    {
+      "id": "day",
+      "unlockedAt": 1791545001214
+    },
+    {
+      "id": "three",
+      "unlockedAt": 1791545001214
+    },
+    {
+      "id": "seven",
+      "unlockedAt": 1791545001214
+    },
+    {
+      "id": "task",
+      "unlockedAt": 1791545001214
+    }
+  ],
+  "completionLedger": [
+    {
+      "taskId": "270ce5a6-0dbc-4e32-a8b1-d6a6147dc9e8",
+      "at": 1791545001214
+    }
+  ],
+  "generated": [],
+  "cycle": 0
+}

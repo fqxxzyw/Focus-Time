@@ -1,0 +1,71 @@
+name: Build Windows and Web Release
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'electron/**'
+      - 'src/**'
+      - 'package*.json'
+      - 'electron-builder.json'
+      - 'e2e/desktop.spec.ts'
+      - 'playwright.desktop.config.ts'
+      - '.github/workflows/release.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run typecheck
+      - run: npm run package:win
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      - name: Verify packaged desktop app
+        run: npm run test:desktop
+        env:
+          DESKTOP_EXECUTABLE: release/win-unpacked/专注时光.exe
+      - name: Package web and write checksums
+        shell: pwsh
+        run: |
+          $version = (Get-Content package.json | ConvertFrom-Json).version
+          Compress-Archive -Path dist/* -DestinationPath "release/Focus-Time-$version-Web.zip"
+          Get-ChildItem release -File | Where-Object { $_.Extension -in '.exe','.zip' } | ForEach-Object {
+            $hash = (Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLower()
+            "$hash  $($_.Name)"
+          } | Set-Content release/SHA256SUMS.txt -Encoding utf8
+      - name: Publish GitHub Release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $version = (Get-Content package.json | ConvertFrom-Json).version
+          $tag = "v$version"
+          gh release view $tag --repo $env:GITHUB_REPOSITORY 2>$null
+          if ($LASTEXITCODE -ne 0) {
+            gh release create $tag --repo $env:GITHUB_REPOSITORY --target $env:GITHUB_SHA --title "专注时光 $tag — 网页版与 Windows 桌面版" --notes-file docs/RELEASE.md
+            if ($LASTEXITCODE -ne 0) { throw '创建 Release 失败' }
+          }
+          $files = @(Get-ChildItem release -File | Where-Object { $_.Extension -in '.exe','.zip','.txt' } | ForEach-Object { $_.FullName })
+          gh release upload $tag $files --repo $env:GITHUB_REPOSITORY --clobber
+          if ($LASTEXITCODE -ne 0) { throw '上传 Release 附件失败' }
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: windows-release-validation
+          path: |
+            release/*.exe
+            release/*.zip
+            release/*.txt
+            docs/desktop-screenshots

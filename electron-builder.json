@@ -1,0 +1,26 @@
+{
+  "appId": "com.fqxxzyw.focus-time",
+  "productName": "专注时光",
+  "directories": { "output": "release" },
+  "files": ["dist/**/*", "electron/**/*", "package.json"],
+  "asar": true,
+  "win": {
+    "target": [
+      { "target": "nsis", "arch": ["x64"] },
+      { "target": "portable", "arch": ["x64"] }
+    ],
+    "artifactName": "Focus-Time-${version}-${arch}-${target}.${ext}",
+    "signAndEditExecutable": false
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "perMachine": false,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "专注时光",
+    "deleteAppDataOnUninstall": false,
+    "artifactName": "Focus-Time-${version}-Setup-x64.exe"
+  },
+  "portable": { "artifactName": "Focus-Time-${version}-Portable-x64.exe" }
+}
