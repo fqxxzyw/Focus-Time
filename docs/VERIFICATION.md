@@ -43,7 +43,7 @@
 
 ## 尚未执行的验证
 
-- GitHub 仓库推送、GitHub Actions 线上运行和真实 Pages 地址访问（本次已提供仓库并开始发布，Windows 最终结果以 Release 与 Actions 状态为准）。配置已提供，子路径构建已检查。
+- GitHub Pages 地址访问尚未执行（网页使用 Sites 发布）；源码与附件已同步 GitHub，Windows Actions 已真实运行并通过。GitHub Pages 配置仍可选用，子路径构建已检查。
 - Safari、Firefox、真实 iOS/Android 手机硬件、系统休眠/电量优化、后台音频权限及夏令时真实环境。
 - 浏览器实际磁盘配额耗尽与恢复、长年百万条记录压力测试。代码有读取/存储/导入异常提示，但不把异常处理代码等同于已完成设备压力测试。
 
@@ -54,3 +54,17 @@
 - Sites 原生部署确认 `succeeded`，线上 URL：https://focus-time.fqxxzyw.chatgpt.site。
 - 新增 Electron 固定本地安全 origin、单实例窗口、渲染器隔离与 Windows NSIS/Portable 配置。
 - 新增 Windows 真实打包窗口测试；此容器不冒充 Windows 系统，Windows 构建与测试由 GitHub Actions 执行，附件仅在测试通过后发布。
+
+## Windows 最终验证结果（2026-10-09）
+
+[Windows 构建与验收流水线](https://github.com/fqxxzyw/Focus-Time/actions/runs/37929129932) 已完成核心发布步骤：
+
+- Windows Server 2025 / Node.js 22 上执行 `npm ci`、20 项测试、类型检查和生产构建。
+- Electron 40.8.3 / electron-builder 26.0.12 生成 NSIS 安装版与 Portable 免安装版。
+- 真实启动 `release/win-unpacked/专注时光.exe`，验证标准安全本地 origin、创建任务、开始和暂停计时、IndexedDB 保存、关闭与重新启动恢复、深色主题和渲染器 Node.js 隔离。
+- Windows 实际界面截图随流水线 artifact 保存。
+- [v1.0.0 Release](https://github.com/fqxxzyw/Focus-Time/releases/tag/v1.0.0) 已发布，四个附件状态均为 uploaded：安装版、免安装版、网页静态包与 SHA256SUMS。
+
+未执行：在用户个人 Windows 电脑上安装/卸载并验证系统权限，以及 macOS/Linux/ARM64 桌面端。安装包没有商业代码签名。
+
+首次 Windows 打包已生成两款 EXE，但打包器自动发布因未配置发布令牌失败；已明确使用 `--publish never` 禁止打包器提前发布，由验收后的单独 Release 步骤负责上传，修复后流程通过。
