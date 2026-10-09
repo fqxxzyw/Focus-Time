@@ -1965,3 +1965,9 @@ small {
     margin: 0;
   }
 }
+.timer-task { color: inherit; }
+.timer-card .mode-tabs button { color: #405f87; }
+[data-theme="dark"] .timer-card .mode-tabs button { color: #cfdef4; }
+[data-theme="dark"] .timer-card .mode-tabs { background: #14213799; }
+[data-theme="dark"] .timer-card .mode-tabs button.selected { background: #3c5d8a; color: #fff; }
+[data-theme="dark"] .cycle-dots span { border-color: #91b7eb; }
