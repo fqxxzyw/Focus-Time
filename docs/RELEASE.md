@@ -1,8 +1,8 @@
 「专注时光」首次完整发布，包含网页静态包与 Windows x64 桌面版。
 
-- `Focus-Time-1.0.0-Setup-x64.exe`：安装版，可选择安装目录，创建桌面和开始菜单快捷方式。
-- `Focus-Time-1.0.0-Portable-x64.exe`：免安装版，下载后直接运行。
-- `Focus-Time-1.0.0-Web.zip`：生产网页静态文件，可部署到 GitHub Pages 或普通静态托管。
+- `Focus-Time-1.1.0-Setup-x64.exe`：安装版，可选择安装目录，创建桌面和开始菜单快捷方式。
+- `Focus-Time-1.1.0-Portable-x64.exe`：免安装版，下载后直接运行。
+- `Focus-Time-1.1.0-Web.zip`：生产网页静态文件，可部署到 GitHub Pages 或普通静态托管。
 - `SHA256SUMS.txt`：附件 SHA-256 校验值。
 - 完整源码可从下方 Source code 下载，或克隆仓库。
 

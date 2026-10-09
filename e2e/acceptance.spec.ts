@@ -189,3 +189,19 @@ test("手机最大倒计时与翻页数字均完整可见", async ({ page }) => 
   await navigate(page, "专注");
   expect(await contained()).toBe(true);
 });
+
+test("沉浸专注可进入、退出并保留计时", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("button", { name: "开始专注", exact: true }).click();
+  await page.getByRole("button", { name: "沉浸专注", exact: true }).click();
+  await expect(page.locator(".app")).toHaveClass(/immersive/);
+  await expect(page.locator(".sidebar")).toBeHidden();
+  await expect(
+    page.getByRole("button", { name: "暂停", exact: true }),
+  ).toBeVisible();
+  await page.keyboard.press("Escape");
+  await expect(page.locator(".sidebar")).toBeVisible();
+  await expect(
+    page.getByRole("button", { name: "暂停", exact: true }),
+  ).toBeVisible();
+});

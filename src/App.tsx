@@ -86,7 +86,7 @@ const reasons = [
 ] as const;
 const backgrounds: Record<string, string> = {
   forest:
-    "radial-gradient(ellipse at 15% 100%,#a7cbb4 0%,transparent 55%),radial-gradient(ellipse at 100% 0%,#e1ead6 0%,transparent 65%),linear-gradient(125deg,#e4eee6,#d0e2d9)",
+    "radial-gradient(ellipse at 15% 100%,#c2d9fc 0%,transparent 55%),radial-gradient(ellipse at 100% 0%,#eaf3ff 0%,transparent 65%),linear-gradient(125deg,#eaf3ff,#d6e7ff)",
   dusk: "radial-gradient(at 20% 80%,#d2a5b5,transparent 60%),linear-gradient(120deg,#e8d6ca,#c8c6e0)",
   ocean:
     "radial-gradient(at 100% 0%,#d6e9ed,transparent 60%),linear-gradient(135deg,#b4d3df,#dfe9e9)",
@@ -109,6 +109,15 @@ function App() {
     [temp, setTemp] = useState(""),
     [down, setDown] = useState(30),
     [taskDetail, setTaskDetail] = useState<string>();
+  const [immersive, setImmersive] = useState(false);
+  const [homeList, setHomeList] = useState("");
+  useEffect(() => {
+    const escape = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setImmersive(false);
+    };
+    window.addEventListener("keydown", escape);
+    return () => window.removeEventListener("keydown", escape);
+  }, []);
   const current = useRef<Data | null>(null),
     queue = useRef(Promise.resolve()),
     busy = useRef(false);
@@ -587,7 +596,7 @@ function App() {
           ? bg
           : backgrounds.forest);
   return (
-    <div className="app">
+    <div className={`app ${immersive && page === "focus" ? "immersive" : ""}`}>
       <aside className="sidebar">
         <a className="brand" href="#focus" onClick={() => setPage("focus")}>
           <span className="brand-icon">
@@ -611,7 +620,13 @@ function App() {
               }}
             >
               <Icon size={20} />
-              <span>{label}</span>
+              <span>
+                {label === "生活打卡"
+                  ? "打卡"
+                  : label === "个人资料"
+                    ? "我的"
+                    : label}
+              </span>
               {page === key && <span className="nav-dot" />}
             </button>
           ))}
@@ -649,7 +664,7 @@ function App() {
             <h1>
               {pages.find((x) => x[0] === page)?.[1]}
               {page === "focus" && (
-                <span className="header-sub">让每一刻，都有所意义。</span>
+                <span className="header-sub">今日计划与专注</span>
               )}
             </h1>
           </div>
@@ -687,11 +702,19 @@ function App() {
           </div>
         )}
         {page === "focus" && (
-          <>
+          <div className="focus-home">
             <div className="focus-layout">
               <section
                 className={`timer-card ${bg.startsWith("data:") ? "photo" : bg.startsWith("#") ? "solid" : ""}`}
-                style={{ background, containerType: "inline-size" }}
+                style={{
+                  background:
+                    document.documentElement.dataset.theme === "dark" &&
+                    !bg.startsWith("data:") &&
+                    !bg.startsWith("#")
+                      ? `linear-gradient(#13243dcc,#13243dcc),${background}`
+                      : background,
+                  containerType: "inline-size",
+                }}
               >
                 <div className="timer-top">
                   <span>
@@ -700,9 +723,15 @@ function App() {
                       ? session.phase === "focus"
                         ? "专注时间"
                         : "休息时间"
-                      : "给重要的事，留一段完整的时间"}
+                      : "自由专注"}
                   </span>
-                  <Leaf size={22} />
+                  <button
+                    className="immersive-toggle"
+                    aria-pressed={immersive}
+                    onClick={() => setImmersive(!immersive)}
+                  >
+                    {immersive ? "退出沉浸" : "沉浸专注"}
+                  </button>
                 </div>
                 <div className="mode-tabs">
                   {(["pomodoro", "up", "down"] as const).map((m, i) => (
@@ -933,47 +962,77 @@ function App() {
                     添加任务
                   </button>
                 </div>
-                {d.tasks
-                  .filter((t) => t.date === day())
-                  .slice(0, 4)
-                  .map((t) => (
-                    <div className="compact-task" key={t.id}>
-                      <button
-                        className={`checkbox ${t.done ? "checked" : ""}`}
-                        aria-label={`标记${t.name}${t.done ? "未完成" : "完成"}`}
-                        onClick={() =>
-                          change((next) =>
-                            completeTask(
-                              next,
-                              next.tasks.find((x) => x.id === t.id)!,
-                              Date.now(),
-                            ),
-                          )
-                        }
-                      >
-                        {t.done && <Check size={14} />}
-                      </button>
-                      <span className={t.done ? "done" : ""}>
-                        {t.name}
-                        <small>
-                          {t.category} · {t.estimate} 个番茄
-                        </small>
-                      </span>
-                      <button
-                        className="icon-button"
-                        aria-label={`专注${t.name}`}
-                        disabled={!!session}
-                        onClick={() => {
-                          setTaskId(t.id);
-                        }}
-                      >
-                        <Play size={16} />
-                      </button>
-                    </div>
+                <div className="list-chips home-list-chips">
+                  <button
+                    className={!homeList ? "selected" : ""}
+                    onClick={() => setHomeList("")}
+                  >
+                    全部
+                  </button>
+                  {d.lists.map((l) => (
+                    <button
+                      key={l.id}
+                      className={homeList === l.id ? "selected" : ""}
+                      onClick={() => setHomeList(l.id)}
+                    >
+                      {l.name}
+                    </button>
                   ))}
-                {!d.tasks.some((t) => t.date === day()) && (
-                  <Empty text="今天还是一张白纸，写下你的第一件事。" />
-                )}
+                </div>
+                <div className="today-cards">
+                  {d.tasks
+                    .filter((t) => t.date === day())
+                    .filter((t) => !homeList || t.listId === homeList)
+                    .map((t) => (
+                      <div className="compact-task" key={t.id}>
+                        <button
+                          className={`checkbox ${t.done ? "checked" : ""}`}
+                          aria-label={`标记${t.name}${t.done ? "未完成" : "完成"}`}
+                          onClick={() =>
+                            change((next) =>
+                              completeTask(
+                                next,
+                                next.tasks.find((x) => x.id === t.id)!,
+                                Date.now(),
+                              ),
+                            )
+                          }
+                        >
+                          {t.done && <Check size={14} />}
+                        </button>
+                        <span className={t.done ? "done" : ""}>
+                          {t.name}
+                          <small>
+                            {t.category} · {t.estimate} 个番茄
+                          </small>
+                        </span>
+                        <button
+                          className="icon-button"
+                          aria-label={`专注${t.name}`}
+                          disabled={!!session}
+                          onClick={() => {
+                            setTaskId(t.id);
+                            document
+                              .querySelector(".timer-card")
+                              ?.scrollIntoView({
+                                behavior: window.matchMedia(
+                                  "(prefers-reduced-motion: reduce)",
+                                ).matches
+                                  ? "auto"
+                                  : "smooth",
+                                block: "center",
+                              });
+                          }}
+                        >
+                          <Play size={16} />
+                        </button>
+                      </div>
+                    ))}
+                </div>
+                {!d.tasks.some(
+                  (t) =>
+                    t.date === day() && (!homeList || t.listId === homeList),
+                ) && <Empty text="今天还是一张白纸，写下你的第一件事。" />}
                 <button className="link more" onClick={() => setPage("tasks")}>
                   查看全部任务 <ChevronRight size={15} />
                 </button>
@@ -1045,7 +1104,7 @@ function App() {
                 </button>
               </div>
             )}
-          </>
+          </div>
         )}
         {page === "tasks" && (
           <TasksPage
@@ -1377,7 +1436,7 @@ function App() {
                       })
                     }
                   >
-                    <option value="forest">林间晨光</option>
+                    <option value="forest">晴空晨光</option>
                     <option value="ocean">海岸微风</option>
                     <option value="dusk">暮色云霞</option>
                     <option value="random">每次专注随机</option>
@@ -1564,7 +1623,7 @@ function App() {
         )}
         <footer>
           专注时光 <span>·</span> 不赶时间，认真生活。{" "}
-          <small>v1.0.0 · 本地存储</small>
+          <small>v1.1.0 · 本地存储</small>
         </footer>
       </main>
       {modal}

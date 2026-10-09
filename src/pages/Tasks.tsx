@@ -52,8 +52,8 @@ export function TasksPage({
     <>
       <div className="page-toolbar">
         <div>
-          <h2>把想做的事，变成做过的事。</h2>
-          <p className="muted">每日计划与周期习惯，在这里慢慢完成。</p>
+          <h2>我的待办</h2>
+          <p className="muted">按待办集安排任务，点选一件事开始专注。</p>
         </div>
         <Button primary onClick={add}>
           <Plus size={18} />
@@ -128,58 +128,60 @@ export function TasksPage({
             重置
           </Button>
         </div>
-        {filtered.map((t, i) => (
-          <div className="task-row" key={t.id}>
-            <button
-              className={`checkbox ${t.done ? "checked" : ""}`}
-              aria-label={`标记${t.name}${t.done ? "未完成" : "完成"}`}
-              onClick={() =>
-                change((next) =>
-                  completeTask(
-                    next,
-                    next.tasks.find((x) => x.id === t.id)!,
-                    Date.now(),
-                  ),
-                )
-              }
-            >
-              {t.done && <Check size={14} />}
-            </button>
-            <div className="task-text">
-              <strong className={t.done ? "done" : ""}>{t.name}</strong>
-              <p>{t.description}</p>
-              <div className="tags">
-                <span>{t.category}</span>
-                <span>{d.lists.find((l) => l.id === t.listId)?.name}</span>
-                <span>{t.date}</span>
-                <span>{t.estimate} 🍅</span>
-                {t.templateId && <span>周期实例</span>}
+        <div className="todo-card-grid">
+          {filtered.map((t, i) => (
+            <div className="task-row" key={t.id}>
+              <button
+                className={`checkbox ${t.done ? "checked" : ""}`}
+                aria-label={`标记${t.name}${t.done ? "未完成" : "完成"}`}
+                onClick={() =>
+                  change((next) =>
+                    completeTask(
+                      next,
+                      next.tasks.find((x) => x.id === t.id)!,
+                      Date.now(),
+                    ),
+                  )
+                }
+              >
+                {t.done && <Check size={14} />}
+              </button>
+              <div className="task-text">
+                <strong className={t.done ? "done" : ""}>{t.name}</strong>
+                <p>{t.description}</p>
+                <div className="tags">
+                  <span>{t.category}</span>
+                  <span>{d.lists.find((l) => l.id === t.listId)?.name}</span>
+                  <span>{t.date}</span>
+                  <span>{t.estimate} 🍅</span>
+                  {t.templateId && <span>周期实例</span>}
+                </div>
+              </div>
+              <div className="row-actions">
+                <button
+                  aria-label={`上移${t.name}`}
+                  disabled={!i}
+                  onClick={() => move(t, -1)}
+                >
+                  <ArrowUp size={14} />
+                </button>
+                <button
+                  aria-label={`下移${t.name}`}
+                  disabled={i === filtered.length - 1}
+                  onClick={() => move(t, 1)}
+                >
+                  <ArrowDown size={14} />
+                </button>
+                <button onClick={() => select(t.id)}>专注</button>
+                <button onClick={() => detail(t.id)}>统计</button>
+                <button onClick={() => edit(t)}>编辑</button>
+                <button aria-label={`删除${t.name}`} onClick={() => remove(t)}>
+                  <Trash2 size={15} />
+                </button>
               </div>
             </div>
-            <div className="row-actions">
-              <button
-                aria-label={`上移${t.name}`}
-                disabled={!i}
-                onClick={() => move(t, -1)}
-              >
-                <ArrowUp size={14} />
-              </button>
-              <button
-                aria-label={`下移${t.name}`}
-                disabled={i === filtered.length - 1}
-                onClick={() => move(t, 1)}
-              >
-                <ArrowDown size={14} />
-              </button>
-              <button onClick={() => select(t.id)}>专注</button>
-              <button onClick={() => detail(t.id)}>统计</button>
-              <button onClick={() => edit(t)}>编辑</button>
-              <button aria-label={`删除${t.name}`} onClick={() => remove(t)}>
-                <Trash2 size={15} />
-              </button>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
         {!filtered.length && (
           <Empty text="这里还没有任务，添加一件你想完成的事吧。" />
         )}
