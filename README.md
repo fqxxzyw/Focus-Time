@@ -1,5 +1,7 @@
 # 专注时光 · Focus Time
 
+[GitHub Pages 在线使用](https://fqxxzyw.github.io/Focus-Time/)
+
 番茄钟，专注于眼前，遇见更好的自己。
 
 一个中文、纯本地的番茄钟与生活记录工具。
